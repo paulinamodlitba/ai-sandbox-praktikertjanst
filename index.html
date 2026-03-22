@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-sandlåda för ekonomer och HR</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; color: #411B38; background: #FFF6F0; }
+        .hero { text-align: center; padding: 80px 20px 60px; background: linear-gradient(135deg, #FFF6F0 0%, #FFE8E0 100%); }
+        .hero h1 { font-size: 56px; font-weight: 700; line-height: 1.07; letter-spacing: -0.005em; margin-bottom: 12px; color: #411B38; }
+        .hero .subtitle { font-size: 28px; line-height: 1.2; font-weight: 400; color: #7A4864; margin-bottom: 20px; }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+        .section { padding: 60px 0; }
+        .section-title { font-size: 40px; font-weight: 700; line-height: 1.1; letter-spacing: -0.003em; margin-bottom: 40px; text-align: center; color: #411B38; }
+        .card { background: white; border-radius: 18px; padding: 48px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(65, 27, 56, 0.08); border: 1px solid rgba(65, 27, 56, 0.06); }
+        .card h3 { font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #411B38; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { font-size: 17px; line-height: 1.6; padding: 12px 0; color: #411B38; display: flex; align-items: flex-start; }
+        .card li:before { content: "\2022"; font-size: 20px; margin-right: 12px; color: #C87C5C; font-weight: 600; }
+        .download-hero { text-align: center; padding: 80px 22px; background: linear-gradient(135deg, #411B38 0%, #5A2E48 100%); border-radius: 18px; margin: 40px 0; }
+        .download-hero h2 { font-size: 40px; font-weight: 700; margin-bottom: 16px; color: white; }
+        .download-hero p { font-size: 21px; color: #FFE8E0; margin-bottom: 32px; }
+        .btn-primary { display: inline-block; background: #C87C5C; color: white; padding: 16px 40px; border-radius: 980px; text-decoration: none; font-size: 17px; font-weight: 500; transition: all 0.2s ease; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #D68D6C; transform: scale(1.02); }
+        .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+        .tab-btn { background: white; border: 2px solid #411B38; padding: 12px 32px; border-radius: 980px; font-size: 17px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; color: #411B38; font-family: 'Inter', sans-serif; }
+        .tab-btn.active { background: #411B38; color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .steps { background: white; border-radius: 18px; padding: 48px; box-shadow: 0 4px 20px rgba(65, 27, 56, 0.08); border: 1px solid rgba(65, 27, 56, 0.06); }
+        .steps h3 { font-size: 28px; font-weight: 600; margin-bottom: 32px; color: #411B38; }
+        .step { margin-bottom: 32px; }
+        .step-number { display: inline-block; width: 36px; height: 36px; background: linear-gradient(135deg, #C87C5C 0%, #D68D6C 100%); color: white; border-radius: 50%; text-align: center; line-height: 36px; font-weight: 600; font-size: 16px; margin-right: 16px; }
+        .step-content { display: inline-block; vertical-align: top; width: calc(100% - 56px); }
+        .step-title { font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #411B38; }
+        .step-description { font-size: 17px; line-height: 1.6; color: #7A4864; }
+        .step-description a { color: #C87C5C; text-decoration: none; font-weight: 500; }
+        .step-description a:hover { text-decoration: underline; }
+        .code-block { background: #FFF6F0; border-radius: 12px; padding: 20px; margin-top: 12px; font-family: 'SF Mono', 'Monaco', 'Courier New', monospace; font-size: 14px; line-height: 1.6; color: #411B38; overflow-x: auto; border: 1px solid rgba(65, 27, 56, 0.1); }
+        .note-box { background: #FFF6F0; border-radius: 12px; padding: 24px; margin: 32px 0; font-size: 17px; line-height: 1.6; color: #411B38; border-left: 4px solid #C87C5C; }
+        .note-box strong { font-weight: 600; color: #411B38; }
+        .examples { background: white; border-radius: 18px; padding: 48px; margin-top: 32px; box-shadow: 0 4px 20px rgba(65, 27, 56, 0.08); border: 1px solid rgba(65, 27, 56, 0.06); }
+        .examples h3 { font-size: 28px; font-weight: 600; margin-bottom: 24px; color: #411B38; }
+        .examples ul { list-style: none; padding: 0; }
+        .examples li { font-size: 17px; line-height: 1.6; padding: 16px 0; color: #411B38; border-bottom: 1px solid #FFF6F0; }
+        .examples li:last-child { border-bottom: none; }
+        .examples li:before { content: "\2192"; margin-right: 12px; color: #C87C5C; font-weight: 600; }
+        .footer { text-align: center; padding: 60px 22px; background: linear-gradient(135deg, #411B38 0%, #5A2E48 100%); margin-top: 60px; color: white; }
+        .footer p { font-size: 15px; line-height: 1.6; color: #FFE8E0; margin-bottom: 8px; }
+        .footer strong { color: white; }
+        @media (max-width: 768px) { .hero h1 { font-size: 40px; } .hero .subtitle { font-size: 21px; } .section-title { font-size: 32px; } .card, .steps, .examples { padding: 32px 24px; } .download-hero { padding: 48px 24px; } .download-hero h2 { font-size: 32px; } }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>AI-sandlåda för ekonomer och HR</h1>
+        <p class="subtitle">Material och instruktioner</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="card">
+                <h3>Demofiler för AI-projektet</h3>
+                <ul>
+                    <li>5 månatliga verksamhetsrapporter från klinikansvariga</li>
+                    <li>Ekonomisk data och nyckeltal (omsättning, beläggningsgrad, kostnader, marginaler)</li>
+                    <li>HR-data (personalomsättning, sjukfrånvaro, kompetensutveckling)</li>
+                    <li>Interna riktlinjer och policyer för ekonomi och HR</li>
+                </ul>
+            </div>
+
+            <div class="download-hero">
+                <h2>Hämta alla filer</h2>
+                <p>Komplett paket med demofiler och arbetsbok</p>
+                <a href="workshop_material_praktikertjanst.zip" class="btn-primary">Ladda ner material</a>
+            </div>
+
+            <h2 class="section-title">Kom igång</h2>
+            <p style="text-align: center; font-size: 18px; margin-bottom: 32px; color: #7A4864;">Välj det verktyg du föredrar – alla fungerar lika bra</p>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('claude')">Claude</button>
+                <button class="tab-btn" onclick="showTab('chatgpt')">ChatGPT</button>
+                <button class="tab-btn" onclick="showTab('copilot')">Microsoft Copilot</button>
+            </div>
+
+            <!-- Claude Tab -->
+            <div id="claude-tab" class="tab-content active">
+                <div class="steps">
+                    <h3>Så här använder du Claude Projects</h3>
+
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <div class="step-title">Skapa konto</div>
+                            <div class="step-description">Gå till <a href="https://claude.ai">claude.ai</a> och skapa ett gratis konto</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <div class="step-title">Skapa Project</div>
+                            <div class="step-description">Klicka på "Projects" i vänstermenyn → "Create Project" → Namnge det t.ex. "Praktikertjänst Ekonomi & HR-assistent"</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <div class="step-title">Ladda upp filer</div>
+                            <div class="step-description">Klicka "Add Content" och ladda upp alla verksamhetsrapporter, ekonomisk data, HR-data och riktlinjer</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <div class="step-title">Custom Instructions</div>
+                            <div class="step-description">Klicka på "Set custom instructions" och skriv:</div>
+                            <div class="code-block">Du är en AI-agent som hjälper ekonomer och HR-ansvariga hos Praktikertjänst att analysera verksamhetsrapporter, ekonomisk data och HR-nyckeltal. När jag frågar dig ska du: 1) Läsa alla tillgängliga rapporter och data, 2) Identifiera mönster i ekonomi, beläggning, personalomsättning och sjukfrånvaro, 3) Prioritera vad som behöver uppmärksamhet, 4) Föreslå konkreta åtgärder och uppföljningsfrågor, 5) Basera svar på både siffror och interna riktlinjer. Var koncis men insiktsfull.</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <div class="step-content">
+                            <div class="step-title">Ställ din första fråga</div>
+                            <div class="step-description">Testa t.ex. "Ge mig en översikt av det ekonomiska läget och personalstatusen på våra kliniker denna månad"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ChatGPT Tab -->
+            <div id="chatgpt-tab" class="tab-content">
+                <div class="steps">
+                    <h3>Så här använder du ChatGPT</h3>
+
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <div class="step-title">Skapa konto</div>
+                            <div class="step-description">Gå till <a href="https://chat.openai.com">chat.openai.com</a> och skapa ett gratis konto</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <div class="step-title">Starta ny chatt</div>
+                            <div class="step-description">Klicka på "New chat" (ChatGPT Plus-användare kan skapa ett "Project")</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <div class="step-title">Ladda upp filer</div>
+                            <div class="step-description">Klicka på pappersklämman och ladda upp alla verksamhetsrapporter, ekonomisk data, HR-data och riktlinjer</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <div class="step-title">Ge instruktioner</div>
+                            <div class="step-description">Börja chatten med följande meddelande:</div>
+                            <div class="code-block">Jag har laddat upp verksamhetsrapporter från kliniker, ekonomisk data, HR-nyckeltal och interna riktlinjer. Du är min AI-assistent som ekonom/HR-ansvarig hos Praktikertjänst. När jag ställer frågor ska du: 1) Analysera alla relevanta dokument, 2) Identifiera mönster i ekonomi, beläggning, personal och sjukfrånvaro, 3) Ge konkreta handlingsbara förslag, 4) Vara koncis men insiktsfull. Bekräfta att du förstår uppdraget.</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <div class="step-content">
+                            <div class="step-title">Ställ din första fråga</div>
+                            <div class="step-description">När ChatGPT bekräftat, testa t.ex. "Ge mig en översikt av det ekonomiska läget och personalstatusen på våra kliniker denna månad"</div>
+                        </div>
+                    </div>
+
+                    <div class="note-box">
+                        <strong>Tips för ChatGPT Plus-användare:</strong> Ni kan skapa ett "Project" (liknande Claude) som sparar kontext mellan sessioner. Gå till "Explore GPTs" → "Create" → Ladda upp filer och lägg in instruktionerna där.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microsoft Copilot Tab -->
+            <div id="copilot-tab" class="tab-content">
+                <div class="steps">
+                    <h3>Så här använder du Microsoft Copilot</h3>
+
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <div class="step-title">Kontrollera tillgång</div>
+                            <div class="step-description">Copilot ingår i vissa Microsoft 365-prenumerationer. Kontrollera med er IT-avdelning om ni har tillgång. Gå till <a href="https://copilot.microsoft.com">copilot.microsoft.com</a> eller använd Copilot direkt i Word/Teams. <strong>Rekommenderat:</strong> Om tillgängligt, välj "Office Agent (frontier)" för bästa prestanda</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <div class="step-title">Välj arbetsyta</div>
+                            <div class="step-description">Öppna Copilot i Microsoft 365 (via Teams, Word, eller webbversionen). Starta en ny konversation</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <div class="step-title">Ladda upp filer</div>
+                            <div class="step-description">I Copilot-chatten, klicka på pappersklämman eller dra och släpp filerna: alla verksamhetsrapporter, ekonomisk data, HR-data och riktlinjer. Observera: Vissa versioner av Copilot har begränsningar på antalet filer</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <div class="step-title">Ge instruktioner</div>
+                            <div class="step-description">Skriv följande i chatten:</div>
+                            <div class="code-block">Jag har laddat upp verksamhetsrapporter från kliniker, ekonomisk data, HR-nyckeltal och interna riktlinjer. Du är min AI-assistent som ekonom/HR-ansvarig hos Praktikertjänst. När jag ställer frågor ska du: 1) Analysera alla relevanta dokument, 2) Identifiera mönster i ekonomi, beläggning, personal och sjukfrånvaro, 3) Ge konkreta handlingsbara förslag, 4) Vara koncis men insiktsfull. Bekräfta att du förstår uppdraget.</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <div class="step-content">
+                            <div class="step-title">Ställ din första fråga</div>
+                            <div class="step-description">När Copilot bekräftat, testa t.ex. "Ge mig en översikt av det ekonomiska läget och personalstatusen på våra kliniker denna månad"</div>
+                        </div>
+                    </div>
+
+                    <div class="note-box">
+                        <strong>Fördel med Copilot:</strong> Om ni redan använder Microsoft 365 är Copilot integrerat med era befintliga verktyg (Teams, Outlook, Word, Excel). Data stannar inom ert Microsoft-ekosystem vilket kan underlätta GDPR-hantering.
+                    </div>
+
+                    <div class="note-box">
+                        <strong>Office Agent (frontier):</strong> Microsofts nyaste och mest kraftfulla AI-modell. Om du har tillgång till denna version rekommenderas den starkt för komplexa analysuppgifter. Välj Office Agent från modellväljaren om tillgängligt.
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples" style="margin-top: 60px;">
+                <h3>Exempel-frågor att testa</h3>
+                <p style="font-size: 17px; color: #7A4864; margin-bottom: 32px;">Börja enkelt och bygg vidare – här är frågor uppdelade efter komplexitet</p>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Grundläggande översikt</h4>
+                <ul>
+                    <li>Ge mig en kort sammanfattning av läget på klinikerna denna månad – hur ser ekonomin och bemanningen ut?</li>
+                    <li>Baserat på alla rapporter och nyckeltal – vad behöver min omedelbara uppmärksamhet? Prioritera från viktigast till minst viktigt</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Ekonomi och lönsamhet</h4>
+                <ul>
+                    <li>Vilka kliniker har bäst respektive sämst lönsamhet just nu? Vad driver skillnaderna?</li>
+                    <li>Hur ser beläggningsgraden ut jämfört med förra månaden? Vilka kliniker har ledig kapacitet?</li>
+                    <li>Analysera kostnadsutvecklingen – finns det kliniker där kostnaderna ökar snabbare än intäkterna?</li>
+                    <li>Vilka intäktsströmmar växer och vilka minskar? Ser du mönster kopplat till behandlingstyper?</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">HR och personal</h4>
+                <ul>
+                    <li>Hur ser personalomsättningen ut per klinik? Finns det mönster i vilka roller som slutar?</li>
+                    <li>Vilka kliniker har högst sjukfrånvaro och finns det trender över tid?</li>
+                    <li>Vi har tre tjänster att rekrytera. Baserat på data – var är behovet störst och vilka kompetenser bör vi prioritera?</li>
+                    <li>Jag ska ha lönesamtal med klinikcheferna nästa vecka. Vilka nyckeltal bör jag ha med mig för respektive klinik?</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Budget och prognos</h4>
+                <ul>
+                    <li>Hur ligger vi till mot budget hittills i år? Vilka kliniker avviker mest?</li>
+                    <li>Baserat på nuvarande trender – hur ser helårsprognosen ut? Var behöver vi agera?</li>
+                    <li>Vi överväger att investera i ny utrustning på Klinik Söder. Vad säger deras ekonomiska data om deras kapacitet att bära den investeringen?</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Kompetensutveckling och arbetsmiljö</h4>
+                <ul>
+                    <li>Vilka kompetensgap ser du baserat på HR-data och verksamhetsrapporterna?</li>
+                    <li>Klinik Väst rapporterar hög arbetsbelastning. Hur ser deras bemanning ut jämfört med patientvolymen? Vad kan vi göra?</li>
+                    <li>Vilka utbildningsinsatser har genomförts och finns det koppling mellan kompetensutveckling och klinikens resultat?</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Konkreta output</h4>
+                <ul>
+                    <li>Skriv ett sammanfattande mail till ledningsgruppen om månadens ekonomiska läge. Inkludera de tre viktigaste insikterna och rekommenderade åtgärder</li>
+                    <li>Skapa en prioriterad åtgärdslista för ekonomi och HR de kommande två veckorna</li>
+                    <li>Jag ska presentera kvartalsrapporten för styrelsen. Ge mig 5 nyckelpunkter med stöd i data</li>
+                    <li>Skriv ett utkast till en intern kommunikation om de nya besparingsåtgärderna – tonen ska vara ärlig men motiverande</li>
+                </ul>
+
+                <h4 style="font-size: 22px; font-weight: 600; color: #411B38; margin-top: 32px; margin-bottom: 16px;">Kritiskt tänkande</h4>
+                <ul>
+                    <li>Finns det diskrepanser mellan vad klinikcheferna rapporterar och vad siffrorna visar?</li>
+                    <li>Vilka risker ser du baserat på rapporterna? Vad kan gå fel om vi inte agerar?</li>
+                    <li>Vi diskuterar att slå ihop två mindre kliniker. Vilken data stödjer respektive motsäger det beslutet?</li>
+                    <li>Hur påverkar sjukfrånvaron vårt ekonomiska resultat? Kan du kvantifiera kostnaden?</li>
+                </ul>
+
+                <div class="note-box" style="margin-top: 32px;">
+                    <strong>Tips:</strong> Börja med grundläggande frågor för att bygga förtroende, sedan testa mer komplexa analyser. Du kan alltid ställa följdfrågor för att fördjupa: "Förklara mer om varför du flaggar Klinik Norr" eller "Kan du ge konkreta exempel från rapporterna som stöder din analys?"
+                </div>
+
+                <div class="note-box">
+                    <strong>Viktigt om GDPR:</strong> Ladda aldrig upp känsliga personuppgifter (personnummer, löner, medicinska journaler) i AI-verktyg. Demofilerna är fiktiva och säkra att använda. När du testar med egna filer, anonymisera alltid känslig data först.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>We Should Be Friends AB</strong></p>
+        <p>AI-konsultation för svenska organisationer</p>
+    </div>
+
+    <script>
+        function showTab(platform) {
+            document.querySelectorAll('.tab-content').forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            document.getElementById(platform + '-tab').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
