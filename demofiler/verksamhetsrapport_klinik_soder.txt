@@ -1,0 +1,43 @@
+# Månadsrapport – Klinik Söder (Tandvård & Sjukgymnastik)
+**Period:** Februari 2025
+**Klinikchef:** Marcus Eriksson
+
+## Sammanfattning
+Stark månad för tandvårdssidan med rekordhög beläggning. Sjukgymnastikavdelningen fortsätter dock att underprestera – vi behöver diskutera strategin framåt. Jag ser stor potential om vi kan öka remissflödet från tandvården till sjukgymnastiken (käkledspatienter).
+
+## Ekonomi
+- **Omsättning totalt:** 2 180 000 kr (budget: 2 100 000 kr, +3,8%)
+  - Tandvård: 1 680 000 kr (+8% mot budget)
+  - Sjukgymnastik: 500 000 kr (-12% mot budget)
+- **Beläggningsgrad:** Tandvård 91%, Sjukgymnastik 58%
+- **Materialkostnad:** 210 000 kr (9,6% av omsättning – bra!)
+- **Personalkostnad:** 1 350 000 kr (62% av omsättning)
+- **Resultat före overhead:** 380 000 kr (budget: 320 000 kr)
+
+## Personal
+- **Antal anställda:** 18 (10 tandläkare, 3 tandhygienister, 3 sjukgymnaster, 2 receptionister)
+- **Sjukfrånvaro:** 3,1% (en sjukgymnast korttidsfrånvaro 3 dagar)
+- **Övertid:** 18 timmar (normalt)
+- **Nyanställning:** Tandhygienist Sofia Andersson började 1 feb – mycket lovande!
+- **Kompetensutveckling:** Sjukgymnast Peter Holm deltog i konferens om AI-stödd rehabilitering
+
+## Patienter
+- **Antal unika patienter:** Tandvård 610, Sjukgymnastik 95
+- **Nya patienter:** Tandvård 45, Sjukgymnastik 8
+- **Avbokningar/no-shows:** 6% tandvård, 18% sjukgymnastik
+- **Patientnöjdhet (NPS):** Tandvård 74, Sjukgymnastik 55
+
+## Utmaningar
+1. Sjukgymnastiken har för låg beläggning – 58% är inte hållbart
+2. No-show-problematiken inom sjukgymnastiken (18%) driver kostnader utan intäkter
+3. Vi närmar oss kapacitetstaket för tandvården – behöver diskutera expansion eller begränsning
+
+## Möjligheter
+- Korsremittering tandvård→sjukgymnastik (käkleder, nack-/axelbesvär) kan fylla sjukgymnastikens tider
+- Sofia Andersson har bakgrund i barntandvård – potential att utveckla barnmottagningen
+- Peter Holms AI-intresse kan leda till effektivare rehabiliteringsplaner
+
+## Behov av stöd
+- Strategibeslut om sjukgymnastikavdelningens framtid – stänga, omorganisera, eller investera?
+- Budget för eventuell expansion av tandvårdslokaler (vänterum och behandlingsrum 6)
+- Hjälp att analysera no-show-mönstret inom sjukgymnastiken – är det bokningssystemet eller patientgruppen?

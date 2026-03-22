@@ -1,0 +1,66 @@
+# Ekonomisk data och nyckeltal – Februari 2025
+## Samtliga kliniker, Praktikertjänst Region Mitt
+
+### Sammanställning per klinik
+
+| Klinik | Omsättning (tkr) | Budget (tkr) | Avvikelse | Beläggning | Resultat (tkr) | Personalkostnad % |
+|--------|-------------------|---------------|-----------|------------|-----------------|-------------------|
+| Norr | 1 420 | 1 550 | -8,4% | 72% | 145 | 63% |
+| Söder | 2 180 | 2 100 | +3,8% | 79%* | 380 | 62% |
+| Väst | 980 | 1 300 | -24,6% | 61% | -48 | 73% |
+| Centrum | 1 890 | 1 800 | +5,0% | 88% | 345 | 58% |
+| Öst | 1 750 | 1 700 | +2,9% | 80%* | 240 | 62% |
+| **TOTALT** | **8 220** | **8 450** | **-2,7%** | **76%** | **1 062** | **63%** |
+
+*Vägt genomsnitt för kliniker med flera avdelningar
+
+### Trendanalys (senaste 6 månader, omsättning i tkr)
+
+| Klinik | Sep | Okt | Nov | Dec | Jan | Feb | Trend |
+|--------|-----|-----|-----|-----|-----|-----|-------|
+| Norr | 1 580 | 1 540 | 1 490 | 1 320 | 1 480 | 1 420 | ↘ |
+| Söder | 1 950 | 2 020 | 2 050 | 1 780 | 2 100 | 2 180 | ↗ |
+| Väst | 1 280 | 1 250 | 1 180 | 1 020 | 1 040 | 980 | ↘↘ |
+| Centrum | 1 650 | 1 720 | 1 750 | 1 580 | 1 810 | 1 890 | ↗ |
+| Öst | 1 600 | 1 650 | 1 680 | 1 500 | 1 700 | 1 750 | ↗ |
+
+### Budgetuppföljning ackumulerat (jan–feb 2025)
+
+| Klinik | Ack. omsättning (tkr) | Ack. budget (tkr) | Avvikelse | Prognos helår |
+|--------|------------------------|---------------------|-----------|---------------|
+| Norr | 2 900 | 3 100 | -6,5% | 17 400 vs 18 600 budget |
+| Söder | 4 280 | 4 200 | +1,9% | 25 680 vs 25 200 budget |
+| Väst | 2 020 | 2 600 | -22,3% | 12 120 vs 15 600 budget |
+| Centrum | 3 700 | 3 600 | +2,8% | 22 200 vs 21 600 budget |
+| Öst | 3 450 | 3 400 | +1,5% | 20 700 vs 20 400 budget |
+
+### Nyckeltal per behandlingstyp (februari)
+
+| Behandlingstyp | Intäkt (tkr) | Andel av total | Marginal | Förändring vs jan |
+|----------------|--------------|----------------|----------|-------------------|
+| Allmän undersökning/profylax | 2 890 | 35% | 45% | -2% |
+| Fyllningsterapi | 1 810 | 22% | 52% | +1% |
+| Protetik (kronor, broar) | 1 480 | 18% | 38% | +8% |
+| Ortodonti | 920 | 11% | 62% | +5% |
+| Kirurgi/extraktion | 580 | 7% | 48% | -1% |
+| Sjukgymnastik | 540 | 7% | 35% | -3% |
+
+### Kostnadsutveckling (februari vs januari)
+
+| Kostnadspost | Feb (tkr) | Jan (tkr) | Förändring | Kommentar |
+|--------------|-----------|-----------|------------|-----------|
+| Personal | 5 140 | 5 080 | +1,2% | Övertid Väst driver |
+| Material/tandteknik | 978 | 920 | +6,3% | Prisökning leverantör |
+| Lokalhyra | 680 | 680 | 0% | Fast kostnad |
+| IT/system | 145 | 145 | 0% | Fast avtal |
+| Marknadsföring | 85 | 62 | +37% | Kampanj Norr + Öst |
+| Utbildning | 48 | 35 | +37% | Protetikkurs Centrum |
+| Övrigt | 82 | 78 | +5% | |
+| **Totalt** | **7 158** | **7 000** | **+2,3%** | |
+
+### Likviditet och kassaflöde
+- **Banksaldo per 28 feb:** 4 280 000 kr
+- **Kundfordringar:** 1 890 000 kr (varav 320 000 kr förfallna >30 dagar)
+- **Leverantörsskulder:** 1 150 000 kr
+- **Kassaflöde februari:** +180 000 kr (januari: +420 000 kr)
+- **Prognos mars:** Negativt kassaflöde om Väst fortsätter trenden

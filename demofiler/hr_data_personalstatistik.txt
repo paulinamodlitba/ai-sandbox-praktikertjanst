@@ -1,0 +1,80 @@
+# HR-data och personalstatistik – Februari 2025
+## Praktikertjänst Region Mitt
+
+### Personalöversikt
+
+| Klinik | Anställda | Vakanser | Sjukfrånvaro | Personalomsättning (12 mån) | Medelålder |
+|--------|-----------|----------|--------------|------------------------------|------------|
+| Norr | 12 | 0 | 9,2% | 8% (1 av 12) | 42 år |
+| Söder | 18 | 0 | 3,1% | 6% (1 av 18) | 38 år |
+| Väst | 8 | 2 | 14,2% | 30% (3 av 10) | 47 år |
+| Centrum | 14 | 0 | 2,8% | 7% (1 av 14) | 40 år |
+| Öst | 15 | 1* | 5,4% | 13% (2 av 15) | 36 år |
+| **Totalt** | **67** | **3** | **6,6%** | **12%** | **40 år** |
+
+*Pågående rekrytering av ortodontist
+
+### Sjukfrånvaro – detaljerad
+
+| Klinik | Korttid (<14 d) | Långtid (>14 d) | Total | Trend (3 mån) | Kostnad (tkr) |
+|--------|-----------------|------------------|-------|----------------|---------------|
+| Norr | 2,1% | 7,1% | 9,2% | ↗ | 82 |
+| Söder | 3,1% | 0% | 3,1% | → | 42 |
+| Väst | 4,8% | 9,4% | 14,2% | ↗↗ | 102 |
+| Centrum | 2,8% | 0% | 2,8% | → | 31 |
+| Öst | 5,4% | 0% | 5,4% | → | 58 |
+
+**Anmärkning:** Klinik Väst och Norr har långtidssjukskrivningar som är den primära drivaren. Klinik Väst har en alarmerande trend sedan november.
+
+### Övertid per klinik
+
+| Klinik | Övertid (tim) | Per anställd | Kostnad (tkr) | Jmf förra mån | Kommentar |
+|--------|---------------|--------------|---------------|----------------|-----------|
+| Norr | 42 | 3,5 | 29 | +15% | Kompenserar hygienistbrist |
+| Söder | 18 | 1,0 | 13 | -10% | Normal nivå |
+| Väst | 68 | 8,5 | 51 | +22% | OHÅLLBART |
+| Centrum | 12 | 0,9 | 9 | -5% | Låg nivå |
+| Öst | 28 | 1,9 | 20 | +8% | Ortodontister |
+
+### Pågående rekryteringar
+
+| Klinik | Roll | Status | Antal sökande | Beräknad tillsättning |
+|--------|------|--------|---------------|----------------------|
+| Väst | Tandläkare (2 st) | Annonserad v.6 | 3 | April–Maj 2025 |
+| Väst | Receptionist (vikariat) | Sökes via bemanning | – | Mars 2025 |
+| Öst | Ortodontist | Annonserad v.4 | 4 | April 2025 |
+| Norr | Tandhygienist (vikariat) | Informell kontakt | 1 | Omgående om beslut |
+
+### Medarbetarundersökning – senaste (november 2024)
+
+| Klinik | Engagemang | Ledarskap | Arbetsmiljö | Utvecklingsmöjligheter | Total (1-10) |
+|--------|------------|-----------|-------------|------------------------|--------------|
+| Norr | 6,8 | 7,2 | 6,5 | 5,8 | 6,6 |
+| Söder | 7,5 | 7,8 | 7,2 | 7,0 | 7,4 |
+| Väst | 4,2 | 5,5 | 3,8 | 4,0 | 4,4 |
+| Centrum | 8,1 | 8,3 | 7,8 | 7,5 | 7,9 |
+| Öst | 7,0 | 7,4 | 6,8 | 6,5 | 6,9 |
+
+**Anmärkning:** Klinik Väst har alarmerande låga siffror. Ny mätning planerad till mars.
+
+### Kompetensutveckling – genomförd (Q1 2025)
+
+| Anställd | Klinik | Utbildning | Dagar | Kostnad (tkr) | Affärsnytta |
+|----------|--------|------------|-------|---------------|-------------|
+| Erik Johansson | Norr | Digital avtryckstagning | 2 | 18 | Minskar tandteknikerkostnader |
+| Peter Holm | Söder | AI i rehabilitering (konferens) | 1 | 8 | Effektivare rehabiliteringsplaner |
+| 3 tandläkare | Centrum | Protetikutbildning (pågående) | 6 | 45 | Ökad protetikandel (+marginal) |
+| Sofia Andersson | Söder | Onboarding + barntandvård | 3 | 12 | Utveckla barnmottagningen |
+
+### Lönestatistik per roll (medel, månadslön)
+
+| Roll | Praktikertjänst | Marknad* | Differens | Kommentar |
+|------|-----------------|----------|-----------|-----------|
+| Tandläkare | 52 000 kr | 55 000 kr | -5,5% | Under marknad |
+| Ortodontist | 62 000 kr | 64 000 kr | -3,1% | Nära marknad |
+| Tandhygienist | 34 000 kr | 35 500 kr | -4,2% | Under marknad |
+| Tandsköterska | 28 000 kr | 28 500 kr | -1,8% | Nära marknad |
+| Receptionist | 27 000 kr | 27 000 kr | 0% | Marknadsmässig |
+| Sjukgymnast | 36 000 kr | 37 000 kr | -2,7% | Nära marknad |
+
+*Källa: Branschrapport Tandvård 2024

@@ -1,0 +1,109 @@
+# Interna riktlinjer – Ekonomi och HR
+## Praktikertjänst Region Mitt
+**Version:** 2025-01 | **Gäller från:** 1 januari 2025
+
+---
+
+## 1. Ekonomiska riktlinjer
+
+### 1.1 Lönsamhetsmål
+- **Beläggningsgrad:** Minst 85% för att säkerställa lönsamhet
+- **Personalkostnad:** Max 65% av omsättning
+- **Materialkostnad:** Max 12% av omsättning
+- **Resultat före overhead:** Minst 15% av omsättning
+
+### 1.2 Budgetavvikelser
+- Avvikelse >10% från månadsbudget: Klinikchef ska rapportera orsak och åtgärdsplan inom 5 arbetsdagar
+- Avvikelse >15%: Ekonomichef involveras för gemensam handlingsplan
+- Negativt resultat 2 månader i rad: Ledningsgruppsdiskussion obligatorisk
+
+### 1.3 Investeringar
+- Investeringar <50 000 kr: Klinikchefens beslut
+- Investeringar 50 000–200 000 kr: Regionchefens godkännande krävs
+- Investeringar >200 000 kr: Ledningsgruppens beslut
+- Alla investeringar >100 000 kr ska ha dokumenterad ROI-kalkyl
+
+### 1.4 Tandteknikeravtal
+- Avtal omförhandlas årligen i Q4
+- Prisökning >5% ska eskaleras till ekonomiavdelningen centralt
+- Minst 2 offerter vid byte av leverantör
+
+### 1.5 Patientavgifter och prissättning
+- Priser sätts centralt och kommuniceras via prislistan (uppdateras 1 jan och 1 jul)
+- Kliniker får INTE erbjuda rabatter utan godkännande från regionchef
+- Avbetalningsplaner >10 000 kr kräver kreditkontroll
+
+---
+
+## 2. HR-riktlinjer
+
+### 2.1 Rekrytering
+- Alla tillsvidareanställningar ska godkännas av HR centralt
+- Annonsering sker via Praktikertjänsts rekryteringsportal + valfria kanaler
+- Minst 2 referenssamtal ska genomföras innan erbjudande
+- Provanställning 6 månader är standard
+
+### 2.2 Löner
+- Lönerevision genomförs 1 april varje år
+- Individuell lönesättning baserad på prestation, kompetens och marknad
+- Lönekartläggning genomförs årligen i Q1
+- Löner ska vara marknadsmässiga (±5% av branschmedian)
+- Vid konkurrenshotade medarbetare: HR och regionchef fattar gemensamt beslut om motbud
+
+### 2.3 Sjukfrånvaro
+- **Mål:** <5% total sjukfrånvaro
+- Korttidsfrånvaro >3 tillfällen/kvartal: Omtankesamtal med närmaste chef
+- Sjukfrånvaro >14 dagar: Rehabiliteringsplan ska upprättas inom 7 dagar
+- Sjukfrånvaro >6%: Klinikchef rapporterar orsaksanalys till HR
+- Företagshälsovård tillgänglig för alla anställda via avtal med Avonova
+
+### 2.4 Arbetstid och övertid
+- Normal arbetstid: 40 timmar/vecka
+- Övertid ska godkännas i förväg av klinikchef
+- Max 50 timmar övertid per anställd och kalendermånad (lag)
+- Systematisk övertid >30 timmar/månad ska analyseras – beror det på underbemanning?
+- Kompensation: Övertidsersättning enligt kollektivavtal eller kompledighet
+
+### 2.5 Kompetensutveckling
+- Varje anställd har rätt till minst 3 dagars kompetensutveckling per år
+- Budget: Max 25 000 kr per anställd och år
+- Klinikchef ansvarar för individuell utvecklingsplan (IDU)
+- Utbildning som kostar >15 000 kr kräver utbildningsavtal (återbetalningsskyldighet vid uppsägning <12 mån)
+
+### 2.6 Medarbetarsamtal
+- Genomförs minst 2 gånger per år (mars och september)
+- Ska dokumenteras i HR-systemet
+- Klinikchef ansvarar för genomförande
+- Om medarbetare inte fått samtal inom planerad period, eskaleras till HR
+
+### 2.7 Arbetsmiljö
+- Arbetsmiljörond genomförs kvartalsvis
+- Skyddsombud finns på varje klinik
+- Incidenter och tillbud rapporteras i Lex Maria/arbetsmiljösystemet
+- Vid NPS <50 eller medarbetarengagemang <5.0: Handlingsplan ska tas fram inom 30 dagar
+
+---
+
+## 3. Rapportering
+
+### 3.1 Månadsrapport
+- Klinikchef lämnar verksamhetsrapport senast 5:e arbetsdagen varje månad
+- Rapporten ska innehålla: ekonomi, personal, patienter, utmaningar, möjligheter och behov av stöd
+- Ekonomiavdelningen sammanställer nyckeltal senast 10:e arbetsdagen
+
+### 3.2 Kvartalsrapport
+- Regionchef presenterar kvartalsrapport för ledningsgruppen
+- Inkluderar: ackumulerat resultat, prognos helår, personalstatus, patientnöjdhet
+- Strategiska beslut fattas baserat på kvartalsrapporten
+
+### 3.3 Årsredovisning
+- Bokslut färdigställs senast 15 februari
+- Årsredovisning presenteras på föreningsstämman i april
+
+---
+
+## 4. GDPR och dataskydd
+- Patientdata hanteras i enlighet med patientdatalagen
+- Personaldata lagras i HR-systemet med behörighetsstyrning
+- AI-verktyg får INTE användas med riktiga person- eller patientuppgifter utan godkännande från dataskyddsombud
+- Anonymisering krävs vid all extern delning av data
